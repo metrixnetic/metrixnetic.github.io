@@ -56,7 +56,7 @@ animation-fill-mode: forwards;
 
 
 
-.header,.StoreIk,.wow,#svg,.img,h1,p,.imgUranium,h1,button,h2{
+.header,.StoreIk,.wow,#svg,.img,h1,p,.imgUranium,h1,h2{
   animation-name: bgc-change,no-change;
   animation-duration: 2.5s,2.9s;
   animation-delay: 0s,2.2s;
@@ -362,6 +362,7 @@ h3, h4, h6 {
 
 p, h7 {
   position: absolute;
+  font-size: 1vw;
   z-index: 8;
   left: 422px;
   color: #BDBDBD;
@@ -371,7 +372,16 @@ p, h7 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5px; }
+  margin-top: 5px; 
+  text-align: center;}
+
+@media only screen and (max-width: 1404px){
+  p, h7{
+    position: absolute;
+    left: 356,125356125px;
+    font-size:0.95vw;
+  }
+}
 
 .thoughD {
   background-color: black;
