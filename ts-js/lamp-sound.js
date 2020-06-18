@@ -8,7 +8,7 @@ $(this).css("opacity","0");
 let clickCount = 0
 
 $("#svg").on("click",function enable(){
-  document.getElementById("all").style.filter = "brightness(0%)";
+  document.getElementById("all").style.filter = "brightness(10%)";
   document.getElementById("bg").style.display = "none";
    $("form").css("visibility","hidden");
 
@@ -17,17 +17,17 @@ $("#svg").on("click",function enable(){
   document.getElementById("bg").style.display = "block";
 
   $("#svg").on("click",function enable(){
-  document.getElementById("all").style.filter = "brightness(0%)";
+  document.getElementById("all").style.filter = "brightness(10%)";
   document.getElementById("bg").style.display = "none";
    $("form").css("visibility","hidden");
 
   $("#svg").on("click",function enable(){
-  document.getElementById("all").style.filter = "brightness(0%)";
+  document.getElementById("all").style.filter = "brightness(5%)";
   document.getElementById("bg").style.display = "none";
  
   $("form").css("visibility","hidden");
    if(clickCount===4){
-   	 document.getElementById("all").style.filter = "brightness(0%)";
+   	 document.getElementById("all").style.filter = "brightness(5%)";
   document.getElementById("bg").style.display = "none";
   alert("Well, well, well, looks like you need to pay for the light.")
     $("form").css("visibility","visible");
