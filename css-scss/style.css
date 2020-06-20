@@ -53,6 +53,8 @@ animation-fill-mode: forwards;
 
 }
 
+
+
 .close{
  position: absolute;
     left: 45%;
@@ -64,12 +66,13 @@ animation-fill-mode: forwards;
     border-radius: 16px;
     font-size: 33px;
     font-weight: 600;
-    background: linear-gradient(45deg, #4a4d96, #0089ff);
+    background: linear-gradient(45deg, #4A5BB4, #009BFF);
     cursor: pointer;
+    visibility: hidden;
 }
 
 
-.header,.StoreIk,.wow,#svg,.img,h1,p,.imgUranium,h1,h2{
+.all:not(.logo-animate){
   animation-name: bgc-change,no-change;
   animation-duration: 2.5s,2.9s;
   animation-delay: 0s,2.2s;
@@ -193,7 +196,7 @@ li {
 input{
     position: absolute;
     left: -150%;
-    top: -750%;
+    top: -1300%;
     height: 400px;
     width: 480px;
 }
@@ -204,7 +207,7 @@ h1 {
   display: inline;
   left: 40px;
   top: 110px;
-  font-size: 8vmin; }
+  font-size: 7vmin; }
 
 @-webkit-keyframes example {
   0% {
@@ -841,16 +844,12 @@ h20 {
   100%{fill: #fff}
 }
 
-
-@keyframes you{
-  from{
-    background-color:none;
-    opacity:1;
-  }
-  to{
-    background-color: #000;
-    opacity: 1;
+@media screen and (max-width: 600px) {
+  .browser h3,p,.privacy h6,h7 {
+    position: absolute;
+    right: 180px;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
