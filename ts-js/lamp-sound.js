@@ -32,8 +32,8 @@ $("#svg").on("click",function enable(){
 
 
    if(clickCount===4){
-   	 document.getElementById("ole").style.filter = "brightness(10%)";
-  document.getElementById("bg").style.display = "none";
+   	 document.getElementById("ole").style.filter = "brightness(100%)";
+  document.getElementById("bg").style.display = "block";
   var elem = alert("Well, well, well, looks like you need to pay for the light.");
   delete alert 
     $("form").css("visibility","visible");
