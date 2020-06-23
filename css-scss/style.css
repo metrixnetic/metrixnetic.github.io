@@ -40,8 +40,8 @@ z-index: 4;
 height: 300px;
 width: 300px;
 animation-name:logo-rotate,scale,position;
-animation-duration: 0.5s,0.4s,0.5s;
-animation-delay: 0.4s,1.2s,2.4s;
+animation-duration: 0.5s,0.4s,0.8s;
+animation-delay: 0.4s,1.2s,2.05s;
 animation-fill-mode: forwards;
 }
 
@@ -64,17 +64,39 @@ animation-fill-mode: forwards;
     width: 165px;
     border: none;
     border-radius: 16px;
+    color: white;
     font-size: 33px;
     font-weight: 600;
-    background: linear-gradient(45deg, #4A5BB4, #009BFF);
+    background-color: #000;
+    background-image:url(../img/wave.svg);
+    background-size: 350px;
+    background-repeat: no-repeat;
     cursor: pointer;
     visibility: hidden;
+}
+
+:hover.close{
+  background-color: #000;
+   background-image:url(../img/wave.svg);
+  background-size: 200px;
+  background-position: right;
+   background-repeat: no-repeat;
+  /*background-position: right;*/
+  transition: all .3s;
+}
+
+:focus.close{
+   background-image:url(../img/wave.svg);
+  background-size: 700px;
+  background-position: right;
+   background-repeat: no-repeat;
+  transition: all .3s;
 }
 
 .all:not(#Svg-logo){
   z-index: 5;
   animation-name: bgc-change,no-change;
-  animation-duration: 1.5s,3.3s;
+  animation-duration: 1.85s,3.8s;
   animation-delay: 0s,1.4s;
 }
 
@@ -851,5 +873,3 @@ h20 {
   }
 }
 
-
-/*# sourceMappingURL=style.css.map */
