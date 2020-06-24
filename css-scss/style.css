@@ -175,6 +175,11 @@ li {
   display: inline;
   margin: 20px; }
 
+.ada{
+  position: relative;
+  top: -2px;
+}
+
 .li {
   position: relative;
   top: -34px;
@@ -185,7 +190,7 @@ li {
 }
 
 .acc {
-  position: fixed;
+  position: absolute;
   right: 0px;
   margin: 9px; }
 
@@ -205,11 +210,6 @@ li {
    }
 
 
-@media (min-width: 956px){
-  .banner svg{
-    right: 30px;
-  }
-}
 
 .blackStyle{
   -webkit-box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
@@ -413,7 +413,13 @@ main {
   background-position: center;
   margin: 0.5%;
   width: 49%;
-  height: 580px; }
+  height: 580px; 
+font-weight: 700}
+
+h3,h6{
+  position: relative;
+  left: 26%;
+}
 
 h3, h4, h6 {
   margin: 0;
@@ -443,13 +449,7 @@ p, h7 {
   margin-top: 5px; 
   text-align: center;}
 
-@media only screen and (max-width: 1404px){
-  p, h7{
-    position: absolute;
-    left: 356,125356125px;
-    font-size:0.95vw;
-  }
-}
+
 
 .thoughD {
   background-color: black;
@@ -988,6 +988,11 @@ h20 {
   }
 }
 
+.adc,.ade{
+  position: relative;
+  left: -0.3%;
+}
+
 @-webkit-keyframes reverse-color{
   0%{fill:#bf3afc;}
   50%{fill: #d06ffc}
@@ -1000,10 +1005,62 @@ h20 {
   100%{fill: #fff}
 }
 
-@media screen and (max-width: 600px) {
-  .browser h3,p,.privacy h6,h7 {
+@media (min-width: 425px){
+  .privacy h6 {
     position: absolute;
-    right: 180px;
+    left: 93px;
+  }
+  .browser h3{
+    position: absolute;
+    left: 97px;
+  }
+  .adb{
+    position: relative;
+    top: 15%;
+  }
+  .ade{
+    position: relative;
+    top: 15%;
+  }
+     .menu{
+    max-width: 100%;
   }
 }
 
+@media (max-width:1024px) and (min-width:768){
+  .banner svg{
+    right: 50px;
+  }
+    .menu{
+    max-width: 100%;
+  }
+  .braws{
+    font-size:15px;
+    right: 2px;
+  }
+  .desc{
+    width:96px;
+  }
+  .privacy h6 {
+    position: absolute;
+    left: 165px;
+  }
+  .browser h3{
+    position: absolute;
+    left: 196px;
+  }
+  .ada{
+     position: relative;
+    top: 70px;
+  }
+  .adb{
+   position: relative;
+    top: 90px;
+  }
+}
+
+@media screen and (max-height: 640px){
+   .people,.browser{
+        background-size: calc(43.23rem + 43.23vw);
+   }
+}
