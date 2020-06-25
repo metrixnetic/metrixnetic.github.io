@@ -1,20 +1,23 @@
+@charset "UTF-8";
+
 /* Please do not use this import in production. You could download this font from here https://fontshourage.com/font/roboto */
 @import "http://fonts.fontstorage.com/import/roboto.css";
+
 /*
-	Roboto, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
+  Roboto, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 900, 900 italic
 */
 
-body{
+body {
   width: 100%;
   height: auto;
 }
 
-header{
+header {
   width: 100%;
   height: 100%;
 }
 
-.banner{
+.banner {
   background-image: url("../img/bBack.jpg");
   background-size: 2000px;
   background-position: center;
@@ -22,24 +25,39 @@ header{
   opacity: 0.5;
 }
 
-.sBanner{
+.sBanner {
   width: 100%;
   height: 800px;
   background-color: #3A526A;
   position: absolute;
 }
 
-.vBanner{
+.Bmenu {
+  position: relative;
+  top: -10px;
+}
+
+.logo {
+  margin: 10px 10px 10px 20px;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  height: 23px;
+  opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+.vBanner {
   width: 100%;
   height: 800px;
 }
 
-.cs{
+.cs {
   width: 100%;
   text-align: center;
   position: absolute;
   top: 300px;
-  color: rgb(255, 255, 255);
+  color: white;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 66px;
@@ -47,36 +65,41 @@ header{
   margin: 20px 0 20px 0;
 }
 
-.ur{
-  @extend .cs;
+.ur {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 66px;
+  font-weight: 300;
+  margin: 20px 0 20px 0;
   top: 200px;
   font-size: 94px;
   font-weight: bold;
   margin: 0 0 20px 0;
 }
 
-.download2{
+.download2 {
   position: absolute;
   left: 50%;
   margin: 20px 0;
   transform: translate(-50%, -50%);
   top: 400px;
   padding: 0;
-  background: {
-    color: #161616;
-  };
+  background-color: #161616;
   border: 0;
   border-radius: 5px;
   color: white;
-  font: {
-    weight: bold;
-    size: 16px;
-  };
+  font-weight: bold;
+  font-size: 16px;
   width: 155px;
   height: 47px;
 }
 
-.plans{
+.plans {
   width: 100%;
   height: auto;
   display: flex;
@@ -84,49 +107,38 @@ header{
   background-color: #eaeaec;
 }
 
-
-
-.pImage{
+.pImage {
   position: relative;
   width: 1000px;
   height: 600px;
   background-image: url("../img/pBAck.jpg");
   float: right;
   top: 500px;
-  -webkit-box-shadow: -15px -12px 28px -12px rgba(0,0,0,0.61);
-  -moz-box-shadow: -15px -12px 28px -12px rgba(0,0,0,0.61);
-  box-shadow: -5px -5px 15px -12px rgba(0,0,0,0.61);
+  -webkit-box-shadow: -15px -12px 28px -12px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: -15px -12px 28px -12px rgba(0, 0, 0, 0.61);
+  box-shadow: -5px -5px 15px -12px rgba(0, 0, 0, 0.61);
 }
 
-canvas{
-  width: 100%;
-  height: 750px;
-  position: absolute;
-  top: 50px;
-}
-
-.aText{
+.aText {
   margin: 20px;
   width: 920px;
   color: #696969;
 }
 
-.h{
-  font: {
-    size: 52px;
-  };
+.h {
+  font-size: 52px;
   color: black;
   font-weight: 800;
   margin-bottom: 60px;
 }
 
-.hps{
+.hps {
   font-weight: 700;
   color: black;
   font-size: 18px;
 }
 
-#inv{
+#inv {
   background-image: url("../img/штм.webp");
   width: 100%;
   height: 476px;
@@ -135,11 +147,11 @@ canvas{
   margin-top: 30px;
 }
 
-.flexibleImage{
+.flexibleImage {
   max-width: 100%;
 }
 
-#imgFast{
+#imgFast {
   background-image: url("../img/fast.svg");
   width: 100%;
   height: 476px;
@@ -148,7 +160,7 @@ canvas{
   margin-top: 30px;
 }
 
-.hs{
+.hs {
   background-image: url("../img/hs.jpg");
   width: 100%;
   height: 476px;
@@ -157,9 +169,18 @@ canvas{
   margin-top: 30px;
 }
 
-.language{
+.language {
   position: absolute;
   text-align: right;
   margin-right: 20px;
   width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+/*# sourceMappingURL=bStyle.css.map */
