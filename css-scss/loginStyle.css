@@ -4,6 +4,15 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+::placeholder{
+  color: white;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -79,8 +88,7 @@ Buttons
 .btn:hover::after {
   background: rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
-          cursor: pointer; }
+          box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2); }
 
 .btn-social {
   padding-left: 64px;
@@ -95,21 +103,21 @@ Buttons
   width: 50px;
   height: 100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(49, 48, 48, 0.80);
   line-height: 3.2;
   border-radius: 5px 0 0 5px; }
 
 .btn-facebook {
-  background-color: #3b5897; }
+  background-color: #232222; }
 
 .btn-twitter {
-  background-color: #53abee; }
+  background-color:#232222 }
 
 .btn-google {
-  background-color: #de4e3b; }
+  background-color: #232222 }
 
 .btn-linkedin {
-  background-color: #00a1db; }
+  background-color: #232222; }
 
 /*--------------------
 Form
@@ -123,9 +131,10 @@ Form
 .form fieldset input {
   width: 100%;
   height: 48px;
-  color: #333333;
+  color: #ffffff;
+  background: #232222;
   padding: 15px 40px 15px 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 14px;
   outline: none !important;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -136,7 +145,7 @@ Form
 .form button {
   width: 100%;
   outline: none !important;
-  background: linear-gradient(-5deg, #79b52c, #94d63d);
+  background: linear-gradient(-5deg, #4e2996, #8b00ff);
   border: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -161,16 +170,16 @@ Signup
           box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: -ms-flexbox;}
 
 .signup-connect,
 .signup-classic {
   width: 50%;
-  padding: 30px 50px; }
+  padding: 30px 50px;
+  background: rgba(49, 48, 48, 1);}
 
 .signup-connect {
-  background: linear-gradient(134deg, #fbce50, #e08106);
+  background: linear-gradient(134deg, #604ED4, #5DA8F9);
   color: white; }
 
 .signup-connect h1 {
@@ -180,6 +189,7 @@ Signup
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
 
 .signup-classic h2 {
+  color: white;
   font-size: 16px;
   font-weight: normal;
   margin-top: 23px;
@@ -194,7 +204,7 @@ Signup
   top: 17px;
   z-index: 2;
   width: 20px;
-  color: rgba(0, 0, 0, 0.2);
+  color: white;
   text-align: center; }
 
 .signup-classic fieldset.email::after {
@@ -203,70 +213,20 @@ Signup
 .signup-classic fieldset.password::after {
   content: '\f023'; }
 
-@media screen and (max-width: 768px) {
-  .signup {
+@media screen and (max-width: 1024px){
+  .signup{
     display: block;
-    border-radius: 0; }
-a
-  .signup-connect {
-    width: 100%; }
-    .signup-connect h1 {
-      font-size: 5rem;
-      text-align: center; }
-
-  .btn-submit{
-    padding-top: 20px;
-    padding-left: 0;
   }
-
-  .btn {
-    height: 140px;
-    font-size: 3.5rem;
-    padding-top: 40px;
-    padding-left: 170px; }
-
-  .fa {
-    font-size: 3rem;
-    width: 140px !important; }
-
-  .signup-classic {
-    width: 100%; }
-    .signup-classic h2 {
-      font-size: 3rem; }
-
-  .form fieldset input {
-    height: 100px;
-    font-size: 3rem; }
-  .form fieldset::after {
-    font-size: 3rem;
-    right: 50px;
-    top: 25px; }
-  .form fieldset.email::after {
-    right: 55px; }
-
-  .btn-submit {
-    padding-top: 20px;
-    padding-left: 0; } 
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+  .signup-connect{
+    width: 100%;
+    height: 100%;
   }
-  25% {
-    background-position: 50% 0%;
+  .signup-classic{
+    width: 100%;
+    height: 100%;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 50%%;
+  .signup-connect-content{
+    margin-top: 50px;
   }
 }
-
-
-
-/*# sourceMappingURL=loginStyle.css.map
+/*# sourceMappingURL=loginStyle.css.map */

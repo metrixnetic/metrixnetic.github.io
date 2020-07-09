@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.55">
     <title>Daily UI #001: Sign Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
@@ -19,11 +19,13 @@
 <div class="signup">
 
     <div class="signup-connect">
+        <div class="signup-connect-content">
         <h1>Create your account</h1>
         
-        <a href="#" class="btn btn-social btn-facebook fb-login-button" onclick="logIn()"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
-        <a href="#" id="customBtn" class="customGPlusSignIn btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
-        <a href="#" class="btn btn-social btn-twitter" id="twitter-button"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+        <a href="#" class="btn btn-social btn-facebook fb-login-button" onclick="logIn()"><i class="fa fa-facebook"></i><p class="fap">Sign in with Facebook</p></a>
+        <a href="#" id="customBtn" class="customGPlusSignIn btn btn-social btn-google"><i class="fa fa-google"></i><p class="fap">Sign in with Google</p></a>
+        <a href="#" class="btn btn-social btn-twitter" id="twitter-button"><i class="fa fa-twitter"></i><p class="fap"> Sign in with Twitter</p></a>
+        </div>
     </div>
 
     <div class="signup-classic">
@@ -42,16 +44,14 @@
                 <input type="password" placeholder="Password"/>
             </fieldset>
 
-            <button type="submit" class="btn">Sign up</button>
+            <button type="submit" class="btn"><p class="btn-p">Sign up</p></button>
         </form>
     </div>
-
-</div>
+    </div>
 
 <!--  JS  -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="ts-js/fb-login.js"></script>
-<script src="ts-js/tw-login.js"></script>
+<script type="text/javascript" src="../ts-js/fb-login.js"></script>
+<script src="../ts-js/tw-login.js"></script>
 </body>
 </html>
