@@ -45,6 +45,14 @@ width: 300px;
         animation-delay: 0.4s,1.2s,2.05s;
 -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
+-moz-animation-name:logo-rotate,scale,position;
+        animation-name:logo-rotate,scale,position;
+-moz-animation-duration: 0.5s,0.4s,0.8s;
+        animation-duration: 0.5s,0.4s,0.8s;
+-moz-animation-delay: 0.4s,1.2s,2.05s;
+        animation-delay: 0.4s,1.2s,2.05s;
+-moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
 }
 
 .logo-div svg path{
@@ -55,6 +63,14 @@ width: 300px;
    -webkit-animation-delay: 0.02s,2.9s;
            animation-delay: 0.02s,2.9s;
    -webkit-animation-fill-mode: forwards;
+           animation-fill-mode: forwards;
+    -moz-animation-name: c-change,reverse-color;
+           animation-name: c-change,reverse-color;
+   -moz-animation-duration: 1.2s,0.7s;
+           animation-duration: 1.2s,0.7s;
+   -moz-animation-delay: 0.02s,2.9s;
+           animation-delay: 0.02s,2.9s;
+   -moz-animation-fill-mode: forwards;
            animation-fill-mode: forwards;
 
 }
@@ -110,6 +126,12 @@ width: 300px;
           animation-duration: 1.85s,3.8s;
   -webkit-animation-delay: 0s,1.4s;
           animation-delay: 0s,1.4s;
+    -moz-animation-name: bgc-change,no-change;
+          animation-name: bgc-change,no-change;
+  -moz-animation-duration: 1.85s,3.8s;
+          animation-duration: 1.85s,3.8s;
+  -moz-animation-delay: 0s,1.4s;
+          animation-delay: 0s,1.4s;        
 }
 
 
@@ -791,6 +813,7 @@ h20 {
   to{
     left: -135px;
     top: -145px;
+    z-index: 5;
   }
 }
 }
@@ -832,6 +855,12 @@ h20 {
   100%{fill: #bf3afc}
 }
 
+@-moz-keyframes c-change{
+  0%{fill: #fff}
+  50%{fill: #d06ffc}
+  100%{fill: #bf3afc}
+}
+
 @-webkit-keyframes scale{
   from{
     -webkit-transform: scale(1);
@@ -853,6 +882,18 @@ h20 {
             transform: scale(0.07668);
   }
 }
+
+@-moz-keyframes scale{
+  from{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to{
+    -webkit-transform: scale(0.07668);
+            transform: scale(0.07668);
+  }
+}
+
 
 @-webkit-keyframes bgc-change{
   from{
@@ -876,6 +917,18 @@ h20 {
   }
 }
 
+@-moz-keyframes bgc-change{
+  from{
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+  }
+  to{
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+  }
+}
+
+
 @-webkit-keyframes no-change{
   from{
     -webkit-filter: brightness(0%);
@@ -895,7 +948,18 @@ h20 {
   to{
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
-  }f
+  }
+}
+
+@-moz-keyframes no-change{
+  from{
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+  }
+  to{
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
 }
 
 @-webkit-keyframes scale-to-small{
@@ -920,7 +984,29 @@ h20 {
    }
 }
 
+@-moz-keyframes scale-to-small{
+   from{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   to{
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+   }
+}
+
 @-webkit-keyframes position{
+  from{
+    left: 40%;
+    top: 35%;
+  }
+  to{
+    left: -123px;
+    top: -128px;
+  }
+}
+
+@-moz-keyframes position{
   from{
     left: 40%;
     top: 35%;
@@ -950,6 +1036,12 @@ h20 {
 }
 
 @keyframes reverse-color{
+  0%{fill:#bf3afc;}
+  50%{fill: #d06ffc}
+  100%{fill: #fff}
+}
+
+@-moz-keyframes reverse-color{
   0%{fill:#bf3afc;}
   50%{fill: #d06ffc}
   100%{fill: #fff}
