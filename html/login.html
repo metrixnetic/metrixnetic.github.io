@@ -13,14 +13,13 @@
 </head>
 <body>
     <div class="bCK"></div>
-    <div class="overlay"></div>
 
 
 <div class="signup">
 
     <div class="signup-connect">
         <div class="signup-connect-content">
-        <h1>Create your account</h1>
+        <h1 class="create">Create your account</h1>
         
         <a href="#" class="btn btn-social btn-facebook fb-login-button" onclick="logIn()"><i class="fa fa-facebook"></i><p class="fap">Sign in with Facebook</p></a>
         <a href="#" id="customBtn" class="customGPlusSignIn btn btn-social btn-google"><i class="fa fa-google"></i><p class="fap">Sign in with Google</p></a>
@@ -47,6 +46,8 @@
 
             <button type="submit" class="btn"><p class="btn-p">Sign up</p></button>
         </form>
+            <a href="#" class="signing sign" id="sign"><p class="paragraph_in_link p-in-link">Already Have account?</p></a>
+            <a href="" class="helpme signing"><p class ="paragraph_in_link helpme-p">forgot password?</p></a>
     </div>
     </div>
     </div>
@@ -55,5 +56,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="../ts-js/fb-login.js"></script>
 <script src="../ts-js/tw-login.js"></script>
+    <script type="text/javascript">
+        $('.sign').click(function (click) {
+            $('.email').remove();
+            $('.create').text("Sign in with");
+            $('.p-in-link').text("Not have Account?");
+            $('h2').text("Sign in");
+            $('#sign').attr('sign','sign2')
+        });
+    </script>
 </body>
 </html>
